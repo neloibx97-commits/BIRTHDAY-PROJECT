@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 50px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  background: radial-gradient(
+    circle at center,
+    #fffaf4 0%,
+    #a58d71 20%,
+    #eedeca 50%,
+    #e7c192 100%
+  );
+
+  text-align: center;
+  font-family: cursive;
+  color: #112a4d;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  color: #7df9ff;
+  background: radial-gradient(
+    circle at center,
+    #2f3583 0%,
+    #2d185e 20%,
+    #1d0838 50%,
+    #19043a 100%
+  );
+}
+
+body.dark-mode .wish-btn:hover {
+  background-color: #7df9ff;
+  color: #1a1a1a;
+  border-color: #1d0838;
+}
+
+h1 {
+  font-size: 38px;
+  text-shadow: #454ea3 1px 2px 1px;
+}
+
+#click-btn {
+  font-size: 15px;
+  font-style: italic;
+  color: #854a07;
+  margin-top: 20px;
+  text-shadow: #473d32 1px 1px 1px;
+}
+
+body.dark-mode #click-btn {
+  color: #f7a746;
+  text-shadow: #730df0 1px 2px 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.landing-icons {
+  font-size: 5rem;
+  margin: 20px 0;
+  transition: transform 0.3s;
+  text-shadow: #203149 1px 3px 3px;
+}
+
+.landing-icons:hover {
+  transform: scale(1.2);
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 160px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px;
+  object-fit: cover;
+}
+
+#mode-toggle {
+  position: absolute;
+  color: crimson;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid sandybrown;
+  border-radius: 20px;
+  z-index: 10;
+  text-shadow: #b3895a 1px 1px 2px;
+  box-shadow: #926c41 1px 2px 3px 2px;
+}
+
+#mode-toggle:hover {
+  background-color: #d49e61;
+  color: #203149;
+}
+
+body.dark-mode #mode-toggle:hover {
+  background-color: #4e5385;
+  color: #7df9ff;
+}
+
+.lg-top {
+  margin-bottom: 8rem;
+}
+
+.pointer-box {
+  border: 2px dotted rgb(172, 126, 12);
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  text-shadow: #996120 1px 2px 1px;
+  box-shadow: #724e23 2px 2px 3px 2px;
+}
+
+body.dark-mode .pointer-box {
+  border-color: #203149;
+}
+
+body.dark-mode .pointer-box:hover {
+  background-color: #4e5385;
+}
+
+.pointer-box:hover {
+  background-color: rgb(151, 124, 74);
+  color: rgb(240, 224, 180);
+  font-style: italic;
+  transform: translateY(-6px);
+  border-color: brown;
+}
+
+/* Page 2 styling */
+
+.button-container {
+  position: relative;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.wish-btn:nth-child(1) {
+  left: 8%;
+  top: 60px;
+}
+
+.wish-btn:nth-child(2) {
+  left: 28%;
+  top: 200px;
+}
+
+.wish-btn:nth-child(3) {
+  left: 45%;
+  top: 10px;
+}
+
+.wish-btn:nth-child(4) {
+  left: 65%;
+  top: 120px;
+}
+
+.wish-btn:nth-child(5) {
+  left: 85%;
+  top: 45px;
+}
+.wish-btn {
+  position: absolute;
+  margin: 40px;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: #996120 dotted;
+  color: rgb(75, 17, 17);
+  text-shadow: #5a5749 1px 1px 2px;
+  background-color: rgb(247, 241, 161);
+  transition: transform 0.3s;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: #975949 1px 1px 1px 1px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.wish-btn:hover {
+  border-color: crimson;
+  background-color: rgb(247, 179, 97);
+}
+
+#scripture-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 20px;
+  border: 1px solid rgb(85, 135, 155);
+  display: inline-block;
+  background-color: rgb(214, 180, 106);
+  border-radius: 15px;
+  border: none;
+  box-shadow: #9da6f7 1px 2px 2px;
+}
+
+body.dark-mode #scripture-text {
+  color: #333333;
+}
+
+body.dark-mode #scripture-popup {
+  background-color: #b4e8f8;
+}
+a {
+  text-decoration: none;
+  text-shadow: rgb(77, 139, 121) 1px 2px 1px;
+  color: rgb(35, 100, 35);
+  cursor: pointer;
+}
+
+a:hover {
+  border-style: dotted;
+  border-color: rgb(145, 54, 54);
+  border-radius: 10px;
+  padding: 4px 10px;
+}
+
+#close-scrp {
+  border: none;
+  font-style: oblique;
+  background-color: transparent;
+  padding: 1px 1px;
+  color: #504a5a;
+  margin-top: 12px;
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gene's Birthday</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="lg-top">
+        <img src="./images/eg-pic.jpg" alt="profile pic" class="logo" />
+
+        <div class="toggle-container">
+          <button id="mode-toggle">Mode Toggle</button>
+        </div>
+      </div>
+
+      <!-- pg1: The landing page -->
+
+      <div id="pg1" class="page">
+        <h1>Happy Birthday, EuGene!!</h1>
+
+        <div class="landing-icons">
+          &#x1F388;&#x1F388;&#x1F388;&#x1F381;&#x1F381;
+        </div>
+
+        <div class="pointer-box" onclick="showPage2()">
+          <p>&#x1F449; Your pointer here {and click! }</p>
+        </div>
+      </div>
+
+      <!-- pg2: The Wish page -->
+
+      <div id="page-2" class="page hidden">
+        <h1>Have you made a wish yet? Here's mine for you</h1>
+        <p id="click-btn">[click the buttons below &#128521;]</p>
+        <div class="button-container">
+          <button
+            class="wish-btn"
+            data-scripture="Love: 1 Corinthians 13:4-7. '..You experience an epitome of Love in this new season..'"
+          >
+            Love
+          </button>
+          <button
+            class="wish-btn"
+            data-scripture="Joy: Nehemiah 8:10. '..the JOY of the Lord is your Strength..'"
+          >
+            Joy
+          </button>
+          <button
+            class="wish-btn"
+            data-scripture="Hope: Romans 15:13. '..He fills You until you overflow with confident Hope..'"
+          >
+            Hope
+          </button>
+          <button
+            class="wish-btn"
+            data-scripture="Strength: Isaiah 40:31. '..You find new Strength for trusting in Him..'"
+          >
+            Strength
+          </button>
+          <button
+            class="wish-btn"
+            data-scripture="Glory: Psalm 3:3. '..Your head is held up high..'"
+          >
+            Glory
+          </button>
+        </div>
+
+        <div id="scripture-popup" class="hidden">
+          <p id="scripture-text"></p>
+          <button onclick="closePopup()" id="close-scrp">Close</button>
+        </div>
+
+        <div class="footer-link">
+          <a href="./images/poem.jpg" target="_blank">Click to read my poem</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
