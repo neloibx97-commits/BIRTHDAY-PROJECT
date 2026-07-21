@@ -20,20 +20,23 @@
 
       <div id="pg1" class="page">
         <h1>Happy Birthday, EuGene!!</h1>
+        <p class="subtitle">
+          A little birthday surprise made just for you &#10024;
+        </p>
 
         <div class="landing-icons">
           &#x1F388;&#x1F388;&#x1F388;&#x1F381;&#x1F381;
         </div>
 
         <div class="pointer-box" onclick="showPage2()">
-          <p>&#x1F449; Your pointer here {and click! }</p>
+          <p>&#x1F449; Your pointer here {click & scroll.. }</p>
         </div>
       </div>
 
       <!-- pg2: The Wish page -->
 
       <div id="page-2" class="page hidden">
-        <h1>Have you made a wish yet? Here's mine for you</h1>
+        <h1>Have you made a wish yet? Here's mine for you..</h1>
         <p id="click-btn">[click the buttons below &#128521;]</p>
         <div class="button-container">
           <button
@@ -68,16 +71,33 @@
           </button>
         </div>
 
-        <div id="scripture-popup" class="hidden">
-          <p id="scripture-text"></p>
-          <button onclick="closePopup()" id="close-scrp">Close</button>
-        </div>
-
         <div class="footer-link">
-          <a href="./images/poem.jpg" target="_blank">Click to read my poem</a>
+          <a href="./images/poem img.png" target="_blank"
+            >Click to read my poem</a
+          >
         </div>
       </div>
+
+      <div id="scripture-popup" class="hidden">
+        <p id="scripture-text"></p>
+        <button onclick="closePopup()" id="close-scrp">Close</button>
+      </div>
     </div>
+
+    <div class="sparkles">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <script src="./script.js"></script>
   </body>
