@@ -5,6 +5,12 @@ const text = document.getElementById("scripture-text");
 
 function showPage2() {
   document.getElementById("page-2").classList.remove("hidden");
+
+  confetti({
+    particleCount: 1000,
+    spread: 300,
+    origin: { y: 0.5 },
+  });
 }
 
 toggleBtn.addEventListener("click", () => {
