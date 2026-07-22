@@ -20,7 +20,9 @@ body {
   );
 
   text-align: center;
-  font-family: cursive;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   color: #112a4d;
 }
 
@@ -44,7 +46,6 @@ body {
   margin-bottom: 25px;
   font-size: 17px;
   color: #6b4d2f;
-  font-style: italic;
   opacity: 0.9;
 }
 
@@ -71,14 +72,13 @@ body.dark-mode .wish-btn:hover {
 }
 
 h1 {
-  font-size: 41px;
+  font-size: 48px;
   text-shadow: 0 2px 6px rgba(41, 42, 93, 0.35);
   margin-bottom: 40px;
 }
 
 #click-btn {
   font-size: 15px;
-  font-style: italic;
   color: #854a07;
   margin-top: 20px;
   text-shadow: #473d32 1px 1px 1px;
@@ -111,8 +111,8 @@ body.dark-mode #click-btn {
   position: absolute;
   top: 20px;
   left: 20px;
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
   border-radius: 50%;
   margin: 10px;
   object-fit: cover;
@@ -307,17 +307,17 @@ body.dark-mode #scripture-popup {
 }
 a {
   text-decoration: none;
-  font-size: large;
-  text-shadow: rgb(58, 94, 84) 1px 1px 1px;
+  font-size: larger;
+  text-shadow: rgb(38, 59, 53) 1px 1px 1px;
   color: rgb(35, 100, 35);
   cursor: pointer;
+  padding: 4px 10px;
 }
 
 a:hover {
   border-style: dotted;
   border-color: rgb(145, 54, 54);
   border-radius: 10px;
-  padding: 4px 10px;
 }
 
 #close-scrp {
@@ -427,6 +427,49 @@ a:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   opacity: 0.6;
 }
+
+.poem-page {
+  margin: 0;
+  padding: 20px;
+  background: #d9ab5b;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.poem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poem-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  border: dotted beige;
+  border-radius: 8px;
+  box-shadow: 4px 8px 20px rgba(120, 80, 20, 0.12);
+}
+
+.download-btn {
+  margin: 50px 0;
+  padding: 10px 20px;
+  background: #8b5a2b;
+  color: #ffe4b5;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.download-btn:hover {
+  background: #6f431c;
+  transform: translateY(-2px);
+  border-style: none;
+}
+
+/* media queries */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
@@ -573,5 +616,9 @@ a:hover {
     width: 90%;
     top: 15%;
     left: 50%;
+  }
+
+  .poem-page {
+    padding: 16px;
   }
 }
